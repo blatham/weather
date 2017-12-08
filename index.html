@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+
+
     <!-- Set a page title -->
     <title>Weather</title>
-    
+
     <!-- Site Styles -->
     <link rel="stylesheet" href="/css/tachyons.min.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -14,12 +16,43 @@
 
   <body>
     <div class="sans-serif">
-      
+
       <!-- If there is an error, this box is shown. 'dn' is the only required class -->
-      <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
-        Sorry, we couldn't find that city. 
+      <div id="error" class="dn bg-pink white pa4 fixed bottom-0 w-100">
+        check your spelling. you still a bad bish tho.
       </div>
-          
+
+
+<header class="tc pv4 pv5-ns">
+      <!-- Content -->
+      <div class="flex flex-wrap pa4 ha7">
+        <div class="w-100 w-50-m w-third-l">
+          <h1><span class="bg-black-90 lh-copy white pa3 tracked-tight">
+          Locations
+        </span></h1>
+          <p>City: <span id="location-name"></span></p>
+          <p>Country: <span id="country"></span></p>
+        </div>
+
+        <div class="w-50 w-50-m w-third-l">
+          <h1><span class="bg-black-90 lh-copy white pa3 tracked-tight">
+          Temperature
+        </span></h1>
+          <p>Current Temp: <span id="temp"></span></p>
+          <p>Max Temp: <span id="temp-max"></span></p>
+          <p>Min Temp: <span id="temp-min"></span></p>
+        </div>
+
+        <div class="w-50 w-50-m w-third-l">
+          <h1><span class="bg-black-90 lh-copy white pa3 tracked-tight">
+          Weather
+        </span></h1>
+          <p>Condition: <span id="condition"></span></p>
+          <p>Desription: <span id="condition-description"></span></p>
+          <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+        </div>
+      </div>
+
       <!-- Search Box -->
       <form id="location-search" class="pa4">
         <h1 class="flex flex-wrap items-baseline">
@@ -29,32 +62,11 @@
           <input type="text" id="area" value="Boston" class="flex-auto">
         </h1>
       </form>
-      
-      <!-- Content -->
-      <div class="flex flex-wrap pa4">
-        <div class="w-100 w-50-m w-third-l">
-          <h2>Location</h2>
-          <p>City: <span id="location-name"></span></p>
-          <p>Country: <span id="country"></span></p>
-        </div>
-        
-        <div class="w-100 w-50-m w-third-l">
-          <h2>Temperature</h2>
-          <p>Current Temp: <span id="temp"></span></p>
-          <p>Max Temp: <span id="temp-max"></span></p>
-          <p>Min Temp: <span id="temp-min"></span></p>
-        </div>
-        
-        <div class="w-100 w-50-m w-third-l">
-          <h2>Weather</h2>
-          <p>Condition: <span id="condition"></span></p>
-          <p>Desription: <span id="condition-description"></span></p>
-          <p>Wind Speed: <span id="wind-speed"></span>mph</p>
-        </div>
-      </div>
-      
-    </div>
-    
+
+
+
+  </header>
+
     <!-- Site JavaScript -->
     <script src="/javascript/toggleClass.js" charset="utf-8"></script>
     <script src="/javascript/main.js" charset="utf-8"></script>

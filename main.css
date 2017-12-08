@@ -1,0 +1,31 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+ .atmosphere{
+   background-image: url(/B.JPG);
+   background-size: cover;
+ }
+ .clear{
+   background-image: url(/clear.JPG);
+   background-size: cover;
+ }
+ .clouds{
+   background-image: url(/clouds.JPG);
+   background-size: cover;
+ }
+ .drizzle{
+   background-image: url(/drizzle.JPG);
+   background-size: cover;
+ }
+ .rain{
+   background-image: url(/rain.JPG);
+   background-size: cover;
+ }
+ .snow{
+   background-image: url(/snow.JPG);
+   background-size: cover;
+ }
+ .Thunderstorm{
+   background-image: url(/Thunerstorm.JPG);
+   background-size: cover;
+ }
